@@ -1,0 +1,902 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    column-gap: 160px;
+    background-color: rgb(246 248 250);
+    overflow: auto;
+    position: relative;
+    
+}
+
+.card_data{
+    color: #1c4980;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0 3em;
+    font-size: 14px;
+}
+
+#box1{
+    position: fixed;
+    font-size: 0.9em;
+    width: 142px;
+    font-weight: 500;
+    height: 100%;
+    background-color: rgb(255 255 255);
+    text-align: -webkit-center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 36px;
+    align-items: center;
+}
+
+.icon{
+    margin-bottom: -8px;
+    font-size: 12px;
+}
+
+
+
+#box2{
+    padding: 12px 5px;    
+    width: 100%;
+    background-color: rgb(255 255 255);
+    height: 1000px;
+}
+
+#box3{
+    
+    border: 2px solid red;
+    width: 20px;
+    height: 60px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 0px;
+    border-bottom: 2px solid rgb(218 220 224);
+    padding-left: 15px;
+    line-height: 68px;
+}
+
+.iconbox span{
+    box-sizing: content-box;
+}
+
+.iconbox h3{
+    font-size: 22px;
+}
+
+#Assessment h2{
+    font-weight: 600;
+}
+
+
+#MyAssessments{
+font-size: 20px;
+color: rgb(0 115 230);
+border-bottom: 4px solid #0073e6;
+}
+
+#MyAssessments h5{
+    font-weight: 600;
+}
+
+.verticalLine {
+    border-left: 2px solid rgb(218 220 224);
+    height: 51px;
+}
+
+.tdata {
+    border: 1px solid rgb(218 220 224);
+    padding: 20px;
+    
+}
+
+.blueicons{
+    padding: 8px;
+    border-radius: 9px;
+    background-color: #ebe8fd;
+    color: #6548ee;
+    height: 25px;
+}
+
+.container2{
+    display: flex;
+    border-radius: 10px;
+    padding-left: 15px;
+    width: 100%;
+    gap: 25px;
+    margin-top: 16px;
+}
+
+
+.cards{
+    border: 1px solid rgb(218 220 224);
+    width: 100%;
+    border-radius: 10px;   
+    font-weight: 500; 
+}
+
+
+#bag{
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #ebe8fd;
+    color: #6548ee;
+}
+
+.mob-header1{
+    display: none;
+}
+
+
+.menu_button button a img{
+    border-radius: 40px;
+    padding: 17px; 
+    background-color: #f2f8fe;
+}
+
+tr.rows{
+    display: flex;
+}
+
+.icons{
+    display: none;
+}
+
+.My-Assesment{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding-right: 25px;
+}
+
+#card4, #card5, #card6, #card7, #card8{
+    display: none;
+}
+
+#card1{
+    border: none;
+}
+
+#card1 button{
+    height: 100%;
+    border: 2px dashed rgb(218 220 224);
+    border-radius: 10px;
+    background-color: #f6f8fa;
+     
+}
+
+#card1 button a{
+    text-decoration: none;
+    color: black;
+
+}
+
+hr{
+    width: 90px;
+    border: 1px dashed #bacbd5;
+}
+
+.AssessmentDetails{
+    display: flex;
+    margin-bottom: 2.75em;
+}
+
+.elemnt{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 600;
+}
+
+.Sub-elements{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Sub-elements h3{
+    font-size: 1.45em;
+}
+
+.iconbox{
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #EBE8FD;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.688em;
+}
+
+.data{
+    border-right: 2px solid #ecedef;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.data h3{
+    font-size: 1.45em;;
+}
+
+.Total{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 1.375em;
+    border-right: 1px solid #dadce0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #dadce0;
+    
+}
+
+.Details{
+    padding-left: 15px;
+}
+
+.AssessmentDetails p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Total h2 {
+    font-size: 1.05em;
+    margin-bottom: -3px;
+    white-space: nowrap;
+}
+
+.data h3 span{
+    color: #05C165;
+    font-size: 0.6em;
+    line-height: 1.05em;
+    font-weight: 600;
+}
+
+/* Pop-up window css start */
+
+#main_window{
+    background-color: #fff; /* White background for popup content */
+    padding: 16px 34px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(28 73 128);
+    position: absolute;
+    top: 62px;
+    width: 650px;
+}
+
+.Options{
+    border: 2px solid rgb(218 220 224);
+    padding: 29px;
+    border-radius: 10px;
+    font-weight: 500;
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.Options span{
+    border: 2px solid rgb(221 237 255);
+    background-color: rgb(221 237 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+.closeButton {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  }
+
+.closeButton a {
+    color: white;
+    text-decoration: none;
+  }
+
+.closeButton a span{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.closeButton:hover {
+    color: #999;
+  }
+
+.openPopupButton {
+    color: white;
+    border: none;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+
+  
+
+#borderelemnt{
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 14px 10px;
+    
+    background-color: #e5f1fc;
+    color: #0073e6;
+}
+
+
+
+.popupOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#popupOverlay:target {
+    display: flex;
+}
+
+#Admin_button{
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    width: 54px;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: rgb(251 235 234);
+    color: rgb(214 53 0);
+}
+
+
+  
+.Popup_Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #dadce0;
+    padding-bottom: 10px;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main_content p{
+    font-size: 1.1em;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.dropdown input {
+    border: 2px solid rgb(218 220 224);
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.dropdown select{
+    border: 2px solid rgb(218 220 224);
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.Type input{
+    border: 2px solid rgb(218 220 224);
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.Time input{
+    border: 2px solid rgb(218 220 224);
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.Save p {
+    border: 2px solid;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0 115 230);
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+}
+
+::placeholder, select{
+    font-size: large;
+    color: rgb(28 73 128);
+}
+
+.Footer{
+    display: flex; 
+    flex-direction: column;
+    gap: 25px;
+}
+
+.Footer-2{
+    display: flex; 
+    flex-direction: column; 
+    gap: 25px;
+}
+
+#border-line{
+    border-top: 2px solid #ccc;
+}
+
+.mob-header{
+    display: none;
+}
+
+.mob-elemnt{
+    display: none;
+}
+
+.mob-subelemnt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#bar-chart{
+    display: none;
+}
+
+.My-Assesment div p{
+    font-weight: 500;
+}
+
+.Popup_Header h2:nth-child(2) {
+    display: none;
+
+}
+
+.closeButton a span{
+    color: black;
+}
+
+
+
+/* 
+@media screen and (max-width: 1300px) {
+    .container{
+        width: fit-content;
+
+    }    
+
+    .tablewidth{
+        width: auto;
+    }
+} */
+
+
+@media (max-width: 768px){
+
+    .container{
+        column-gap: 0px;
+        height: 100%;
+    }
+
+    .mob-header1{
+        display: none;
+    }
+
+
+    #box1{
+        display: none;
+    }
+    
+    #box2{
+        background-color: rgb(255 255 255);
+        padding-left: 5px;
+        padding-right: 5px;
+        border-top-left-radius: 15px;
+        height: auto;
+       
+    }
+
+    .container2{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #card1, #card2, #card3{
+        width: 100%;
+    }
+
+    tr.rows{
+        display: inline-block;
+    }
+
+    .tdata{
+        border: none;
+    }
+
+    .tablewidth{
+        border: 2px solid rgb(218 220 224);;
+        border-radius: 33px;
+    }
+
+    .Details{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0px 15px;
+    }
+
+
+    #card1 button {
+        width: 100%;
+    }
+
+    .mob-header{
+        display: none;
+    }
+
+    #bar-chart{
+        display: none;
+    }
+
+    
+
+}
+
+@media (max-width: 600px){
+
+    .main{
+        width: fit-content;
+        display: block;
+    }
+
+    .Popup_Header h2:first-child{
+        display: none;
+
+    }
+
+    .Popup_Header h2:nth-child(2) {
+        display: block;
+    
+    }
+
+    .container{
+        position: static;
+    }
+
+    #box1{
+    background-color: rgb(242 248 254);
+    display: flex;
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    font-size: 2em;
+    align-items: self-start;
+    padding: 45px;
+    gap: 64px;
+    padding-right: 17px;
+    }
+
+    .mob-header1{
+            display: flex;
+            align-items: center;
+            padding: 1em 2em;
+            gap: 27px;
+    }
+
+    .menu_button button{
+        border: none;
+        background-color: white;
+    }
+
+    
+    .header{
+        display: none;
+    }
+
+    .Details{
+        display: none;
+    }
+
+    .icons{
+        display: flex;
+        gap: 26px
+    }
+
+    #card4, #card5, #card6, #card7{
+        display: block;
+        width: 74.25em;
+    }
+
+    #box2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mob-header{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        position: relative;
+        padding-bottom: 20px;
+        background-image: linear-gradient(to right, #0073e6 50%, #f6f8fa 50%);
+        background-size: 100% 2px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    #head1{
+        color: #0073e6;
+    }
+
+    .mob-elemnt{
+        display: flex;
+        gap: 630px;
+    }
+
+    .elemnt{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.3em;
+    }
+
+    .popupOverlay-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey background */
+        display: none; /* Hidden by default */
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    
+    #popupOverlay-2:target {
+        display: flex;
+    }
+
+    .openPopupButton-2 {
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        margin: 20px auto;
+        cursor: pointer;
+      }
+
+    #Admin_button{
+        font-size: 0.8em;
+    display: flex;
+    width: 112px;
+    border: 2px solid red;
+    border-radius: 43px;
+    padding: 4px;
+    justify-content: center;
+    background-color: rgb(251 235 234);
+    color: rgb(214 53 0);
+    }
+
+    #Roundstatus{
+        white-space: nowrap;
+    }
+
+    #Roundstatus p br{
+        display: none;
+    }
+
+    .mob-subelemnt{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 395px;
+    }
+
+    #box1 div hr {
+        width: 100%;
+        border: 1px dashed #bacbd5;
+    }
+    #borderelemnt{
+        margin-left: -28px;
+        border-radius: 20px;
+        padding: 23px;
+    }
+
+    #bar-chart{
+        overflow: hidden;
+        display: block;
+        padding: 50px;
+    }
+
+    .content {
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .minimize-toggle:checked ~ .content {
+        max-height: 500px; /* Set the maximum height when the content is "maximized" */
+        opacity: 1;
+    }
+
+    .minimize-label {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+      
+      /* Hide the checkbox visually and maintain accessibility */
+      .minimize-toggle {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        pointer-events: none;
+      }
+
+    .My-Assesment{
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    gap: 784px;
+    justify-content: flex-start;
+    position: absolute;
+    top: 261px;
+    }
+    .minimize-label img{
+        position: absolute;
+        top: 262px;
+        right: 30px;
+    }
+
+    .AssessmentDetails {
+        display: flex;
+        margin-bottom: 2.75em;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .My-Assesment div p{
+        font-weight: 800;
+        font-size: 1.2em;
+    }
+
+    .icon{
+        font-size: 0.8em;
+    }
+
+    #main_window {
+        background-color: #fff;
+        padding: 16px 34px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: rgb(28 73 128);
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        top: 145px;
+    }
+
+    #AssessmentDetails{
+        font-size: 1.5em;
+        border: 2px solid #dadce0;
+        border-radius: 42px;
+        margin-top: 28px;
+    }
+
+    .AssessmentDetails p:nth-child(1){
+        border-bottom: 2px solid #dadce0;
+
+    }
+
+    .Total{
+        border: none;
+    }
+    
+
+    .AssessmentDetails p:nth-child(1) .Total p:nth-child(1){
+        border-right: 2px solid #dadce0;
+
+    }
+
+    .Total h2{
+        font-weight: 600;
+    }
+
+    .main_content{
+        gap: 20px;
+    }
+
+    .main_content p{
+        font-size: 1.4em
+    }
+
+
+    .popupOverlay{
+        height: 100%
+    }
+
+    .container2{
+        overflow: scroll;
+    max-height: 865px;
+    }
+
+    .closeButton a span{
+        color: red;
+        /* border: 2px solid; */
+        background-color: rgb(251 235 234);
+        border-radius: 32px;
+        padding: 21px;
+    }
+    
+}
+
